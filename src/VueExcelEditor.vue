@@ -36,10 +36,6 @@
                 <span style="width:100%">
                   <svg v-if="selectedCount>0" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-times-circle fa-w-16 fa-sm"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg>
                   <svg v-else aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-bars fa-w-14 fa-sm"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
-                  <!--
-                  <svg v-if="processing" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="spinner" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-spinner fa-w-16 fa-spin fa-sm"><path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z"></path></svg>
-                  <svg v-else aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-bars fa-w-14 fa-sm"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
-                  -->
                 </span>
               </th>
               <th v-for="(item, p) in fields"
@@ -72,10 +68,6 @@
                 <span v-if="Object.keys(columnFilter).length > 0">
                   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eraser" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-eraser fa-w-16 fa-sm"><path fill="currentColor" d="M497.941 273.941c18.745-18.745 18.745-49.137 0-67.882l-160-160c-18.745-18.745-49.136-18.746-67.883 0l-256 256c-18.745 18.745-18.745 49.137 0 67.882l96 96A48.004 48.004 0 0 0 144 480h356c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H355.883l142.058-142.059zm-302.627-62.627l137.373 137.373L265.373 416H150.628l-80-80 124.686-124.686z"></path></svg>                  
                 </span>
-                <!--
-                <svg v-if="selectedCount==table.length" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-times-circle fa-w-16 fa-sm"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z"></path></svg>
-                <svg v-else aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-check-circle fa-w-16 fa-sm"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
-                -->
               </td>
               <vue-excel-filter v-for="(item, p) in fields"
                                 v-show="!item.invisible"
@@ -645,7 +637,6 @@ export default {
     },
     resetColumn () {
       this.fields = []
-      // this.$slots.default.forEach(col => col.componentInstance? col.componentInstance.init() : 0)
       this.tableContent.scrollTo(0, this.tableContent.scrollTop)
       this.calStickyLeft()
     },
@@ -673,7 +664,6 @@ export default {
 
         keyField: false,
         sticky: false,
-        // tabStop: true,
         allowKeys: null,
         mandatory: false,
         lengthLimit: 0,
@@ -737,7 +727,6 @@ export default {
       })        
     },
     refresh () {
-      // this.pageTop = 0
       this.prevSelect = -1
       if (this.fields.length === 0 && this.modelValue.length && Object.keys(this.modelValue[0])) {
         this.autoRegisterAllColumns(this.modelValue)
@@ -811,14 +800,6 @@ export default {
             // Record is created after the filter time
             if (record.$id > this.lastFilterTime) return true
 
-            // Assume new record contains § in any of the key fields
-            /*
-            const isNew = this.fields.filter((field) => {
-              return field.keyField && record[field.name] && record[field.name].startsWith('§')
-            }).length > 0
-            if (isNew) return true // Always show new record in filter mode
-            */
-
             const content = {}
             filterColumnList.forEach((k) => {
               const val = record[this.fields[k].name]
@@ -878,7 +859,6 @@ export default {
     calStickyLeft () {
       let left = 0, n = 0
       this.leftMost = -1
-      // this.tableContent.scrollTo(0, this.tableContent.scrollTop)
       Array.from(this.labelTr.children).forEach(th => {
         left += th.offsetWidth
         const field = this.fields[n++]
@@ -1014,7 +994,6 @@ export default {
         if (!showCols.includes(field.name))
           field.invisible = true
       })
-      // this.refresh()
     },
 
     /* Still evaluating */
@@ -1035,7 +1014,6 @@ export default {
         if (width > 450) width = 450
         field.width = width + 'px'
       })
-      // this.refresh()
     },
 
     columnFillWidth () {
@@ -1073,14 +1051,11 @@ export default {
     },
     datepickerClick () {
       const offset = new Date().getTimezoneOffset() * 60 * 1000
-      // const m = moment(this.inputDateTime)
       switch(this.currentField.type) {
         case 'date':
-          // this.inputBox.value = m.format('YYYY-MM-DD')
           this.inputBox.value = new Date(new Date(this.inputDateTime) - offset).toISOString().slice(0, 10)
           break
         case 'datetime':
-          // this.inputBox.value = m.format('YYYY-MM-DD hh:mn:00')
           this.inputBox.value = new Date(new Date(this.inputDateTime) - offset).toISOString().replace('T', ' ').slice(0, 16) + ':00'
           break
         case 'datetimesec':
@@ -1355,7 +1330,6 @@ export default {
             else
             if (this.autocompleteSelect === -1) {
               this.autocompleteSelect = 0
-              // this.autocompleteSelect = this.autocompleteInputs.length - 1
             }
             break
           case 9:  // Tab
@@ -1516,7 +1490,6 @@ export default {
       }
       this.sep = {}
       this.sep.curCol = this.colgroupTr.children[Array.from(this.labelTr.children).indexOf(e.target.parentElement)]
-      // this.sep.nxtCol = this.sep.curCol.nextElementSibling
       this.sep.pageX = e.pageX
       let padding = 0
       if (getStyleVal(this.sep.curCol, 'box-sizing') !== 'border-box') {
@@ -1526,8 +1499,6 @@ export default {
           padding = parseInt(padLeft) + parseInt(padRight)
       }
       this.sep.curColWidth = e.target.parentElement.offsetWidth - padding
-      // if (this.sep.nxtCol)
-      //   this.sep.nxtColWidth = this.sep.nxtCol.offsetWidth - padding
       window.addEventListener('mousemove', this.colSepMouseMove)
       window.addEventListener('mouseup', this.colSepMouseUp)
     },
@@ -1691,7 +1662,6 @@ export default {
         const height = this.height.replace(/px/,'') * 1 + this.systable.getBoundingClientRect().top - this.recordBody.getBoundingClientRect().top
         if (this.height && controlHeight > height) controlHeight = height
         this.pageSize = this.page || Math.floor(controlHeight / 24)
-        // this.pageSize = this.page || Math.floor((this.systable.parentNode.style.height - this.recordBody.getBoundingClientRect().top - offset) / 24)
       }
       else if (this.height === 'auto') {
         let h = Math.floor((window.innerHeight - this.tableContent.getBoundingClientRect().top - 25))
@@ -1800,7 +1770,6 @@ export default {
     },   
     doImport (e) {
       this.processing = true
-      // this.refresh()
       this.clearAllSelected()
       setTimeout(() => {
         const files = e.target.files
@@ -2010,13 +1979,6 @@ export default {
     getSelectedRecords () {
       return this.table.filter((rec, i) => this.selected[i])
     },
-    /*
-    deleteSelectedRecords () {
-      this.table = this.table.filter((rec, i) => typeof this.selected[i] === 'undefined')
-      this.selected = {}
-      this.selectedCount = 0
-    },
-    */
     rowLabelClick (e) {
       let target = e.target
       while (target.tagName !== 'TD') target = target.parentNode
@@ -2102,8 +2064,6 @@ export default {
       }
     },
     clearAllSelected () {
-      // for (let i = 0; i < this.$refs.systable.children[2].children.length; i++)
-      //  this.unSelectRecord(this.pageTop + i)
       if (this.selectedCount > 0)
         this.$emit('select', Object.keys(this.selected).map(rowPos => Number(rowPos)), false)
       this.selected = {}
@@ -2190,7 +2150,6 @@ export default {
     },
     moveSouth () {
       if (this.focused) {
-        // if (this.currentRowPos + 1 >= this.table.length) {
         if (this.currentRowPos+1 >= (this.pageBottom - this.pageTop) && this.pageBottom >= this.table.length) {
           if (this.readonly) return false
           if (!this.newIfBottom) return false
@@ -2430,15 +2389,12 @@ export default {
       transaction.every((t) => {
         try {
           if (t.type === 'd') {
-            // deleteRecord() transaction
             this.newRecord(t.rec, false, true, true)
           }
           else if (t.field && t.field.keyField && t.oldKeys.includes(t.newVal)) {
-            // newRecord() transaction
             const valueRowPos = this.modelValue.findIndex(v => v.$id === t.$id)
             if (valueRowPos >= 0) {
               this.deleteRecord(valueRowPos, true)
-              // return false
             }
           }
           else
@@ -2470,7 +2426,6 @@ export default {
         const field = this.fields.find(f => f.name === name)
         if (field) this.updateCell(rec, field, rec[name], isUndo)
       })
-      // this.refresh()
       if (!noLastPage) this.lazy(() => {
         this.lastPage()
         this.moveToSouthWest()
@@ -2631,7 +2586,6 @@ export default {
               if (this.inputBoxShow)
                 list = list.filter(element => element.toUpperCase().includes(value))
               list.sort().splice(listCount)
-              // this.autocompleteSelect = list.findIndex(element => element.toUpperCase().includes(value))
             }
             else if (Object.values(field.options).length > 0) {
               list = field.options
@@ -2640,7 +2594,6 @@ export default {
               if (this.inputBoxShow)
                 list = list.filter(element => element.toUpperCase().includes(value))
               list.sort().splice(listCount)
-              // this.autocompleteSelect = list.findIndex(element => element.toUpperCase().includes(value))
             }
           }
           else {
@@ -2747,7 +2700,7 @@ input:focus, input:active:focus, input.active:focus {
   position: absolute;
   padding: 0;
   z-index: 4;
-  border: 2px solid rgb(108, 143, 108);
+  border: 2px solid rgb(27 115 232);
   /* transition: all 0.04s linear; */
 }
 .no-transition {
@@ -2759,7 +2712,7 @@ input:focus, input:active:focus, input.active:focus {
   padding: 3px;
   margin: -1px;
   background-color: lightyellow;
-  border: 1px solid rgb(108, 143, 108);
+  border: 1px solid rgb(27 115 232);
   /*height: fit-content;*/
   overflow-y: scroll;
   font-size: 0.88rem;
@@ -2776,7 +2729,7 @@ input:focus, input:active:focus, input.active:focus {
   cursor: pointer
 }
 .autocomplete-result.select {
-  background-color: lightsteelblue;
+  background-color: rgb(233 240 253);
 }
 .rb-square {
   width: 9px;
@@ -2785,7 +2738,7 @@ input:focus, input:active:focus, input.active:focus {
   border-left: 2px solid white;
   border-bottom: 0;
   border-right: 0;
-  background-color:rgb(108, 143, 108);
+  background-color:rgb(27 115 232);
   position: absolute;
   bottom: -3px;
   right: -2px;
@@ -2813,7 +2766,7 @@ input:focus, input:active:focus, input.active:focus {
   word-spacing: 0.02rem;
   line-height: 1.1;
   overflow: hidden;
-  border: 1px solid lightgray;
+  border: 1px solid #e2e3e3;
 }
 .center-text {
   text-align: center;
@@ -2864,7 +2817,7 @@ input:focus, input:active:focus, input.active:focus {
   border-spacing: 0;
   /*
   margin-bottom: -1px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #e2e3e3;
   */
 }
 .systable .last-col {
@@ -2877,8 +2830,15 @@ input:focus, input:active:focus, input.active:focus {
   background-color: white;
   text-align: left;
 }
+.systable tbody tr td:first-child {
+  color: #5f6369;
+}
+.systable tr.select td:first-child {
+  color: #fff;
+  background: #5f6369!important;
+}
 .systable tr.select td {
-  background-color: #bbb !important;
+  background-color: rgb(233 240 253)!important;
 }
 .systable th, .systable td {
   vertical-align: bottom;
@@ -2889,7 +2849,7 @@ input:focus, input:active:focus, input.active:focus {
   border-left: 0;
 }
 .systable th:not(:last-child) {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #e2e3e3;
 }
 .systable tbody td {
   cursor: cell;
@@ -2910,13 +2870,13 @@ input:focus, input:active:focus, input.active:focus {
   background-position: right 0px top 0px !important;
 }
 .systable tbody tr:not(:last-child) td {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #e2e3e3;
 }
 .systable tbody tr:last-child td {
   border-bottom: 1px solid transparent;
 }
 .systable td:not(:last-child) {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #e2e3e3;
 }
 .systable thead th, .systable thead td {
   padding: 0.4rem 0.3rem;
@@ -2925,10 +2885,11 @@ input:focus, input:active:focus, input.active:focus {
   height: 29px;
   position: sticky;
   z-index: 5;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #e2e3e3;
 }
 .systable thead th {
-  background-color: #e9ecef;
+  color: #5f6369;
+  background-color: #f8f9fa;
   cursor: s-resize;
   z-index: 6;
 }
@@ -2940,10 +2901,12 @@ input:focus, input:active:focus, input.active:focus {
   text-overflow: ellipsis;
 }
 .systable th.focus {
-  border-bottom: 1px solid rgb(61, 85, 61) !important;
+  background-color: rgb(232, 234, 237);
+  border-bottom: 1px solid rgb(27 115 232) !important;
 }
 .systable td.first-col.focus {
-  border-right: 1px solid rgb(61, 85, 61) !important;
+  background-color: rgb(232, 234, 237);
+  border-right: 1px solid rgb(27 115 232) !important;
 }
 .systable tbody td.select:not(.readonly) {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAASUExURQAAANra2tfX19ra2tnZ2dnZ2c8lDs8AAAAFdFJOUwAwQL/PKlwehgAAAAlwSFlzAAAXEQAAFxEByibzPwAAAEdJREFUKFNdyskBACAIA8F49d+yiBEh+9rHYC5poPGiDmUDUGZI2EHCHBV2UWFEiT2UWKBgHwVLiCwjsoKcVeRMkDFFxoiADdH4AyvGhvOPAAAAAElFTkSuQmCC');
@@ -2958,7 +2921,7 @@ input:focus, input:active:focus, input.active:focus {
   background-position: right 5px top 8px;
 }
 .systable .first-col {
-  background:#e9ecef;
+  background:#f8f9fa;
   width: 40px;
   position: sticky;
   left: 0;
@@ -2991,7 +2954,7 @@ input:focus, input:active:focus, input.active:focus {
 .systable tfoot .row-summary {
   height: 25px;
   border-right: 0;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #e2e3e3;
   position: sticky;
   bottom: 0;
   z-index: 4;
@@ -3004,10 +2967,10 @@ input:focus, input:active:focus, input.active:focus {
   z-index: 5;
 }
 .systable tfoot .row-summary.summary-column1 {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #e2e3e3;
 }
 .systable tfoot .row-summary.summary-column2 {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #e2e3e3;
   background: white;
 }
 .systable tfoot .row-summary:last-child {
@@ -3015,9 +2978,9 @@ input:focus, input:active:focus, input.active:focus {
 }
 .systable tfoot .row-summary.first-col {
   height: 25px;
-  border-top: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  background: #e9ecef;
+  border-top: 1px solid #e2e3e3;
+  border-right: 1px solid #e2e3e3;
+  background: #f8f9fa;
   position: sticky;
   left: 0;
   top: auto;
@@ -3032,7 +2995,7 @@ input:focus, input:active:focus, input.active:focus {
   width: 100%;
   height: 25px;
   line-height: 2.3;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #e2e3e3;
   user-select: none;
 }
 .footer .left-block {
@@ -3040,8 +3003,8 @@ input:focus, input:active:focus, input.active:focus {
   left: 0;
   height: 25px;
   width: 40px;
-  background-color: #e9ecef;
-  border-right: 1px solid lightgray;
+  background-color: #f8f9fa;
+  border-right: 1px solid #e2e3e3;
 }
 .h-scroll {
   z-index: -1;
@@ -3053,7 +3016,7 @@ input:focus, input:active:focus, input.active:focus {
   cursor: pointer;
 }
 .h-scroll:hover, .h-scroll.focus, .footer:hover .h-scroll {
-  background-color: lightgray;
+  background-color: #e2e3e3;
 }
 
 .footer a {
@@ -3075,7 +3038,7 @@ input:focus, input:active:focus, input.active:focus {
   width: 13px;
   z-index: 5;
   background-color: white;
-  border-left: 1px solid lightgray;
+  border-left: 1px solid #e2e3e3;
   user-select: none;
 }
 .v-scroll-button {
@@ -3087,7 +3050,7 @@ input:focus, input:active:focus, input.active:focus {
   cursor: pointer;
 }
 .v-scroll-button.focus, .v-scroll-button:hover, .v-scroll:hover .v-scroll-button {
-  background-color: lightgray;
+  background-color: #e2e3e3;
 }
 .runner {
   font-size: 0.88rem;
@@ -3098,7 +3061,7 @@ input:focus, input:active:focus, input.active:focus {
   display: inline-block;
   width: fit-content;
   z-index: 10;
-  background-color: #e9ecef;
+  background-color: #f8f9fa;
   border-radius: 3px;
   white-space: nowrap;
 }
@@ -3110,7 +3073,7 @@ input:focus, input:active:focus, input.active:focus {
   position: absolute;
   border-top: 4px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 8px solid #e9ecef;
+  border-left: 8px solid #f8f9fa;
   right: -8px;
   top: 4px;
 }
