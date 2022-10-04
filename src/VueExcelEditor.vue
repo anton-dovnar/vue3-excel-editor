@@ -892,6 +892,9 @@ export default {
       })
       this.$forceUpdate()
     },
+    updateSetting() {
+      this.setting = this.getSetting()
+    },
     renderColumnCellStyle (field) {
       let result = field.initStyle
       if (field.readonly) result = Object.assign(result, this.readonlyStyle)
@@ -1559,7 +1562,7 @@ export default {
       if (!this.sep || !this.sep.curCol) return
       const diffX = e.pageX - this.sep.pageX
       this.sep.curCol.style.width = (this.sep.curColWidth + diffX) + 'px'
-      this.lazy(this.calStickyLeft, 200)
+      this.lazy(this.updateSetting, 200)
     },
     colSepMouseUp (e) {
       e.preventDefault()
